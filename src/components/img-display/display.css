@@ -1,0 +1,127 @@
+
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+
+}
+.img-box{
+    height: 200px;
+    width: 380px;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0.25);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0,0,0,0.1);
+
+}
+
+.img-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+
+
+}
+
+.mini-display{
+    background-color: rgba(255,255,255,0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    margin-left: 13px;
+
+
+}
+
+.pat-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+}
+
+.report-btn button{
+    padding: 10px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1356d;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.zoom-pairs i{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.zoom-pairs i:hover{
+    color: #f1356d;
+}
+
+.zoom-pairs{
+    position: relative;
+    left: 290px;
+    display: flex;
+    flex-direction: column;
+}
+
+.zoom-pairs .zoom-in{
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    padding-top: 5px;
+    margin-left: 10px;
+    background-color: rgba(255,255,255,0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.zoom-pairs .zoom-out{
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    margin-left: 10px;
+    background-color: rgba(255,255,255,0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+
+@media (max-width: 768px){
+  
+
+   .zoom-pairs{
+        position: relative;
+        left: 0;  
+   }
+
+    .zoom-pairs .zoom-in{
+        width: 400px;
+    }
+
+    .zoom-pairs .zoom-out{
+        width: 400px;
+        top: 70px;
+        left: 0px;
+    }
+}
